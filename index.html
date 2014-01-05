@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>File Upload showing Upload Progress</title>
+  <style>
+    * {
+      font-family: Verdana;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+<form id='uploadForm' enctype='multipart/form-data'> <!--  action='/fileUpload' -->
+  <input id='inputFile' type='file'> <!-- name='uploadingFile' is meaningless -->
+  <input id='inputSubmit' type='button' value='upload'>
+  <div id="fileName"></div>
+  <div id="fileSize"></div>
+  <div id="fileType"></div>
+  <div id="progress"></div>
+</form>
+
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.7.1.min.js'></script>
+<script type='text/javascript' src='main.js'></script>
+</body>
+</html>

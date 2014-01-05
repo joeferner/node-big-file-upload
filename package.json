@@ -1,0 +1,15 @@
+{
+  "name": "node-big-file-upload",
+  "version": "0.0.1",
+  "description": "Simple big file upload server",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "express": "~3.4.7"
+  }
+}
