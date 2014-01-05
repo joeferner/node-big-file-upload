@@ -30,3 +30,5 @@ app.post('/fileUpload', function(req, res) {
 
 console.log('start...');
 app.listen(3030);
+console.log('Listening http://localhost:3030');
+
