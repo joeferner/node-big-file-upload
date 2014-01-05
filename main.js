@@ -24,7 +24,10 @@ $('#inputSubmit').on('click', function() {
 });
 
 function uploadProgress(evt) {
-  if(evt.lengthComputable) {
+  if (evt.type == 'load') {
+    return;
+  }
+  if (evt.lengthComputable) {
     var percentComplete = Math.round(evt.loaded * 100 / evt.total);
     $('#progress').text(percentComplete.toString() + '%');
   } else {
