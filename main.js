@@ -10,8 +10,8 @@ $('#inputFile').on('change', function() {
 $('#inputSubmit').on('click', function() {
   var fd = new FormData();
   fd.append('uploadingFile', $('#inputFile').get(0).files[0]);
+  fd.append('fileName', $('#fileName').text());
   fd.append('date', (new Date()).toString()); // req.body.date
-  fd.append('comment', 'This is a test.'); // req.body.comment
 
   var xhr = new XMLHttpRequest();
   xhr.upload.addEventListener("progress", uploadProgress, false);
